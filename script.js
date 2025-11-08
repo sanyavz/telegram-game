@@ -23,7 +23,7 @@ document.getElementById('rightBtn').addEventListener('touchend', ()=>{ keys.Arro
 function spawnItem(){
     const type=Math.floor(Math.random()*4);
     const baseSize=50;
-    const size = type===3? baseSize*4 : baseSize;
+    const size = type===3? baseSize*2 : baseSize;
     items.push({x:Math.random()*(canvas.width-size), y:-size, width:size, height:size, type:type, image:itemImages[type]});
 }
 
